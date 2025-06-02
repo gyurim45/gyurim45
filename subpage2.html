@@ -1,0 +1,133 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>이달의 음악</title>
+    <style>
+        *{
+            box-sizing:border-box;
+        }
+
+        body{
+            font-family: Arial;
+            padding: 10px;
+            background: #f1f1f1;
+        }
+
+        .header{
+            padding: 30px;
+            text-align: center;
+            background: white;
+        }
+
+        .header a:link{
+            color: black;
+            text-decoration: none;
+        }
+
+        .header h1{
+            font-weight: bold;
+            font-size: 50px;
+        }
+        .topnav{
+            overflow: hidden;
+            background-color: #333;
+        }
+
+        .topnav a{
+            float: left;
+            display: block;
+            color: #f2f2f2;
+            text-align: center;
+            padding: 14px 16px;
+            text-decoration: none;
+        }
+
+        .topnav a:hover{
+            background-color: #ddd;
+            color:black;
+        }
+
+        .row{
+            margin: 20px;
+        }
+        .leftcolumn{
+            float: left;
+            width: 45%;
+        }
+
+        .rightcolumn{
+            float: left;
+            width: 55%;
+            background-color: #f1f1f1;
+            padding-left: 20px;
+        }
+        .card{
+            background-color: white;
+            padding:10px;
+            margin-top: 20px;
+        }
+
+         @media screen and (max-width: 800px){
+            .leftcolumn, .rightcolumn{
+                width: 100px;
+                padding:0;
+            }
+        }
+
+        @media screen and (max-width: 400px){
+            .topnav a{
+                float: none;
+                width: 100%;
+            }
+        }
+
+
+    </style>
+</head>
+<body>
+    <div class="header">
+        <a href="index.html"><h1>책과 음악</h1></a>
+        <p>Book and Music, for you</p>
+    </div>
+    <div class="topnav">
+        <a href="subpage1.html">이달의책</a>
+        <a href="subpage2.html">이달의음악</a>
+        <a href="subpage3.html">책추천</a>
+        <a href="subpage4.html">음악추천</a>
+        <a href="subpage5.html">게시판</a>
+        <a href="login.html" style="float:right">로그인</a>
+        <a href="join.html" style="float:right">회원가입</a>
+    </div>
+    <div class="row">
+        <div class="leftcolumn"><img src="mu1.jpg" class="card"></div>
+        <div class="rightcolumn">
+            <div class="card">
+                <h2>5월의 음악-ODYSSEY</h2>
+                <h4>RIIZE</h4>
+            </div>
+            <div class="card">
+                <p>앨범 소개: 라이즈의 첫 정규 앨범 'ODYSSEY'는 라이즈의 정체성을 확고하게 정의하는 앨범으로 총 10곡이 수록되어있다.</p>
+                <ol>
+                    <li>Odyssey</li>
+                    <li>Bag Bad Back</li>
+                    <li>잉걸 (Ember to Solar)</li>
+                    <li><b>Fly up</b> -title</li>
+                    <li>Show Me Love</li>
+                    <li>Passage</li>
+                    <li>Midnight Mirage</li>
+                    <li>모든 하루의 끝</li>
+                    <li>Inside My Love</li>
+                    <li>Another Life</li>
+                </ol>
+            </div>
+            <div class="card">
+                <p>가장 소개하고 싶은 곡은 8번 트랙인 '모든 하루의 끝'이다. 따뜻하고 부드러운 선율이 특징인 노래로 라이즈 멤버들의 화음과 음색이 잘 어우러져서 위로가 되는 곡이다.</p>
+            </div>
+        
+        </div>
+    </div>
+    
+</body>
+</html>

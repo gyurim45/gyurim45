@@ -1,0 +1,219 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>책과음악</title>
+    <style>
+        *{
+            box-sizing:border-box;
+        }
+
+        body{
+            font-family: Arial;
+            padding: 10px;
+            background: #f1f1f1;
+        }
+
+        .header{
+            padding: 30px;
+            text-align: center;
+            background: white;
+        }
+        .header a:link{
+            color: black;
+            text-decoration: none;
+        }
+
+        .header h1{
+            font-weight: bold;
+            font-size: 50px;
+        }
+        .topnav{
+            overflow: hidden;
+            background-color: #333;
+        }
+
+        .topnav a{
+            float: left;
+            display: block;
+            color: #f2f2f2;
+            text-align: center;
+            padding: 14px 16px;
+            text-decoration: none;
+        }
+
+        .topnav a:hover{
+            background-color: #ddd;
+            color:black;
+        }
+
+        .leftcolumn{
+            float: left;
+            width: 35%;
+        }
+        .leftcolumn p{
+            text-align: center;
+        }
+
+        .rightcolumn{
+            float: left;
+            width: 65%;
+            background-color: #f1f1f1;
+            padding-left: 20px;
+        }
+
+        .img{
+            width: 100%;
+            padding: 10px;
+        }
+        
+        .card{
+            background-color: white;
+            padding:20px;
+            margin-top: 20px;
+        }
+
+        .item{
+            list-style-type: none;
+            /* float: left; */
+            text-align: center;
+            margin-bottom: 20px;
+        }
+
+        .row:after{
+            content: "";
+            display: table;
+            clear: both;
+        }
+        #board ul{
+            margin-top:12px;
+            color:#666666;
+        }
+        #board li{
+            margin-top:5px;
+        }
+        #board .subject{
+            float: left;
+            margin-left: 10px;
+        }
+        #board .date{
+            float: right;
+            margin-right: 5px;
+        }
+
+        .footer{
+            padding:20px;
+            text-align: center;
+            background: #ddd;
+            margin-top: 20px;
+        }
+
+        @media screen and (max-width: 800px){
+            .leftcolumn, .rightcolumn{
+                width: 100px;
+                padding:0;
+            }
+        }
+
+        @media screen and (max-width: 400px){
+            .topnav a{
+                float: none;
+                width: 100%;
+            }
+        }
+
+    </style>
+</head>
+<body>
+    <div class="header">
+        <a href="index.html"><h1>책과 음악</h1></a>
+        <p>Book and Music, for you</p>
+    </div>
+    <div class="topnav">
+        <a href="subpage1.html">이달의책</a>
+        <a href="subpage2.html">이달의음악</a>
+        <a href="subpage3.html">책추천</a>
+        <a href="subpage4.html">음악추천</a>
+        <a href="subpage5.html">게시판</a>
+        <a href="login.html" style="float:right">로그인</a>
+        <a href="join.html" style="float:right">회원가입</a>
+    </div>
+    <div class="row">
+        <div class="leftcolumn">
+            <div class="card">
+                <h2>이달의 책</h2>
+                <h5>매 달 새로운 책을 소개합니다.</h5>
+                <div class="img"><img src="book1.jpg" class="img"></div>
+                <p>5월의 책</p>
+                <p>급류-정대건</p>
+            </div>
+            <div class="card">
+                <h2>이달의 음악</h2>
+                <h5>매 달 새로운 음악을 소개합니다.</h5>
+                <div class="img"><img src="mu1.jpg" class="img"></div>
+                <p>5월의 음악</p>
+                <p>ODYSSEY-RIIZE</p>
+            </div>
+        </div>
+        <div class="rightcolumn">
+            <div class="card">
+                <h2>책 추천</h2>
+                <ul class="item">
+                    <li><img src="b1.png"></li>
+                    <li>흥미진진한 추리 소설 추천</li>
+                </ul>
+                <ul class="item">
+                    <li><img src="b3.png"></li>
+                    <li>깊이 빠져들게 하는 국내 소설 추천</li>
+                </ul>
+                <ul class="item">
+                    <li><img src="b2.png"></li>
+                    <li>나를 위한 자기계발서</li>
+                </ul>
+            </div>
+            <div class="card">
+                <h2>음악 추천</h2>
+                <ul class="item">
+                    <li><img src="m1.png"></li>
+                    <li>자기 전 듣기 좋은 음악 추천</li>
+                </ul>
+                <ul class="item">
+                    <li><img src="m2.png"></li>
+                    <li>기분이 좋아지는 밝은 음악 추천</li>
+                </ul>
+                <ul class="item">
+                    <li><img src="m3.png"></li>
+                    <li>강렬하게 신나는 음악 추천</li>
+                </ul>
+            </div>
+            <div class="card" id="board">
+                <h2>취향 공유 게시판</h2>
+                <ul>
+                    <li>
+                        <div class="subject">제가 좋아하는 음악을 공유합니다.</div>
+                        <div class="date">2025-05-29</div>
+                        <div class="clear"></div>
+                    </li>
+                    <li>
+                        <div class="subject">최근에 읽은 책이에요!</div>
+                        <div class="date">2025-05-29</div>
+                        <div class="clear"></div>
+                    </li>
+                    <li>
+                        <div class="subject">재미있는 책을 공유하고 싶어요</div>
+                        <div class="date">2025-05-27</div>
+                        <div class="clear"></div>
+                    </li>
+                    <li>
+                        <div class="subject">좋은 노래를 찾았어요!</div>
+                        <div class="date">2025-05-25</div>
+                        <div class="clear"></div>
+                    </li>
+                </ul>
+            </div>
+        </div>
+    </div>
+
+</body>
+</html>

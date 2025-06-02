@@ -1,0 +1,176 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>책 추천</title>
+    <style>
+        *{
+            box-sizing:border-box;
+        }
+
+        body{
+            font-family: Arial;
+            padding: 10px;
+            background: #f1f1f1;
+        }
+
+        .header{
+            padding: 30px;
+            text-align: center;
+            background: white;
+        }
+
+        .header a:link{
+            color: black;
+            text-decoration: none;
+        }
+
+        .header h1{
+            font-weight: bold;
+            font-size: 50px;
+        }
+        .topnav{
+            overflow: hidden;
+            background-color: #333;
+        }
+
+        .topnav a{
+            float: left;
+            display: block;
+            color: #f2f2f2;
+            text-align: center;
+            padding: 14px 16px;
+            text-decoration: none;
+        }
+
+        .topnav a:hover{
+            background-color: #ddd;
+            color:black;
+        }
+        ul{
+            list-style-type: none;
+        }
+        body{
+            font-family: "맑은 고딕","돋움";
+            font-size: 100%;
+        }
+        /* 너비가 768픽셀을 초과하는 데스크톱 컴퓨터 등 */
+        .c1{width: 8.33%; float: left; padding:15px;}
+        .c2{width: 16.66%; float: left; padding:15px;}
+        .c3{width: 25%; float: left; padding:15px;}
+        .c4{width: 33.33%; float: left; padding:15px;}
+        .c5{width: 41.66%; float: left; padding:15px;}
+        .c6{width: 50%; float: left; padding:15px;}
+        .c7{width: 58.33%; float: left; padding:15px;}
+        .c8{width: 66.66%;float: left; padding:15px;}
+        .c9{width: 75%; float: left; padding:15px;}
+        .c10{width: 83.33%; float: left; padding:15px;}
+        .c11{width: 91.66%; float: left; padding:15px;}
+        .c12{width: 100%;float: left; padding:15px;}
+        
+        
+        @media only screen and (max-width: 768px){
+            /*  <*=> c 에 해당하는 모든 것을 지정 */
+           [class*="c"]{
+            width: 100%;
+           }
+        }
+
+        aside{
+            color: #ffffff;
+        }
+        aside li{
+            padding: 10px;
+            margin:5px;
+            background-color: #333;
+        }
+        section#main{
+            padding:15px;
+            /* background-color: white; */
+            margin-top: 20px;
+        }
+        section#main p{
+            padding:10px;
+            font-size:0.95em;
+            line-height: 130%;
+        }
+        .item{
+            list-style-type: none;
+            /* float: left; */
+            text-align: center;
+            margin-bottom: 20px;
+        }
+        .card{
+            background-color: white;
+            padding:10px;
+            margin-top: 20px;
+        }
+        #bm{
+            overflow: hidden;
+            background-color: #333;
+        }
+        #bm a{
+            display: block;
+            color: #f2f2f2;
+            text-decoration: none;
+            text-align: center;
+            padding: 14px 16px;
+
+        }
+        #bm a:hover{
+            background-color: #ddd;
+            color:black;
+        }
+
+    </style>
+</head>
+<body>
+    <div class="header">
+        <a href="index.html"><h1>책과 음악</h1></a>
+        <p>Book and Music, for you</p>
+    </div>
+    <div class="topnav">
+        <a href="subpage1.html">이달의책</a>
+        <a href="subpage2.html">이달의음악</a>
+        <a href="subpage3.html">책추천</a>
+        <a href="subpage4.html">음악추천</a>
+        <a href="subpage5.html">게시판</a>
+        <a href="login.html" style="float:right">로그인</a>
+        <a href="join.html" style="float:right">회원가입</a>
+    </div>
+
+     <aside class="c3">
+        <div id="bm">
+        <a href="subpage3.html">추리 소설 추천</a>
+        <a href="subpage3_1.html">한국 소설 추천</a>
+        <a href="#">자기계발서 추천</a>
+        </div>
+     </aside>
+
+     <section id="main" class="c9">
+        <h1>흥미진진한 추리 소설 추천</h1>
+        <div class="card">
+            <ul class="item">
+                <li><img src="book2.jpg"></li>
+                <li><b>홍학의 자리-정해연</b></li>
+                <li>한 학생의 죽음과 그 죽음의 비밀을 풀어가는 이야기. 계속해서 나오는 반전때문에 마지막까지 긴장을 놓을 수 없다. 꼭 결말까지 읽어야하는 소설.</li>
+            </ul>
+        </div>
+        <div class="card">
+            <ul class="item">
+                <li><img src="book3.jpg"></li>
+                <li><b>매스커레이드 호텔-히가시노 게이고</b></li>
+                <li>추리소설 계의 거장 '히가시노 게이고'의 대표 시리즈. 일본의 도쿄에서 일어나는 연쇄 살인사건의 다음 장소는 코르테시아 도쿄 호텔이다. 형사 닛타와 호텔리어 나오미가 협력하며 사건을 해결해나간다.</li>
+            </ul>
+        </div>
+        <div class="card">
+            <ul class="item">
+                <li><img src="book6.jpg"></li>
+                <li><b>봉제인형 살인사건-다니엘 콜</b></li>
+                <li>잔인한 살인사건을 다루는 시리즈의 시작. 여섯명의 신체부위가 한 몸으로 꿰매져 발견된 시체. 이렇게 잔인하게 살인을 저지른 범인은 누구일까. 치열한 추리와 추격이 일어나는 소설이다.</li>
+            </ul>
+        </div>
+     </section>
+</body>
+</html>

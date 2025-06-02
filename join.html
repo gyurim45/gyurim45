@@ -1,0 +1,149 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>회원가입</title>
+    <style>*{
+            box-sizing:border-box;
+        }
+
+        body{
+            font-family: Arial;
+            padding: 10px;
+            background: #f1f1f1;
+        }
+
+        .header{
+            padding: 30px;
+            text-align: center;
+            background: white;
+        }
+
+        .header a:link{
+            color: black;
+            text-decoration: none;
+        }
+
+        .header h1{
+            font-weight: bold;
+            font-size: 50px;
+        }
+        .topnav{
+            overflow: hidden;
+            background-color: #333;
+        }
+
+        .topnav a{
+            float: left;
+            display: block;
+            color: #f2f2f2;
+            text-align: center;
+            padding: 14px 16px;
+            text-decoration: none;
+        }
+
+        .topnav a:hover{
+            background-color: #ddd;
+            color:black;
+        }
+        ul{
+        list-style-type: none;
+        }
+
+        #join{
+            width: 100%;
+            background-color: white;
+            margin-top: 10px;
+            border-radius: 10px;
+            border:solid 2px #333;
+        }
+
+        
+        @media screen and (max-width: 800px){
+            .leftcolumn, .rightcolumn{
+                width: 100px;
+                padding:0;
+            }
+        }
+
+        @media screen and (max-width: 400px){
+            .topnav a{
+                float: none;
+                width: 100%;
+            }
+        }
+    </style>
+</head>
+<body>
+    <div class="header">
+        <a href="index.html"><h1>책과 음악</h1></a>
+        <p>Book and Music, for you</p>
+    </div>
+    <div class="topnav">
+        <a href="subpage1.html">이달의책</a>
+        <a href="subpage2.html">이달의음악</a>
+        <a href="subpage3.html">책추천</a>
+        <a href="subpage4.html">음악추천</a>
+        <a href="subpage5.html">게시판</a>
+        <a href="login.html" style="float:right">로그인</a>
+        <a href="join.html" style="float:right">회원가입</a>
+    </div>
+    <div id="join">
+    <form>
+    <table>
+        <tr>
+        <td>-아이디</td>
+        <td><input type="text"></td>
+        </tr>
+        <tr>
+            <td>-비밀번호</td>
+            <td><input type="password"></td>
+        </tr>
+        <tr>
+            <td>-비밀번호 확인</td>
+            <td><input type="password"></td>
+        </tr>
+        <tr>
+            <td>-이름</td>
+            <td><input type="text"></td>
+        </tr>
+        <tr>
+            <td>-성별</td>
+            <td><input type="radio" name="sex" checked>여성<input type="radio" name="sex">남성</td>
+        </tr>
+        <tr>
+            <td>-전화번호</td>
+            <td><select>
+                <option>010</option>
+                <option>02</option>
+                <option>031</option>
+                <option>직접입력</option>
+            </select>
+            -<input type="text">-<input type="text"></td>
+        </tr>
+        <tr>
+            <td>-이메일</td>
+            <td><input type="text">@
+            <select>
+                <option>선택</option>
+                <option>naver.com</option>
+                <option>gmail.com</option>
+                <option>hanmail.com</option>
+                <option>직접 입력</option>
+            </select></td>
+        </tr>
+        <tr>
+            <td>-생년월일</td>
+            <td><input type="datetime-local"></td>
+        </tr>
+        <br>
+        <tr>
+            <td></td>
+            <td><button type="submit">가입</button></td>
+        </tr>
+    </table>
+</div>
+
+</body>
+</html>

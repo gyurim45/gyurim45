@@ -1,0 +1,168 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>책 추천</title>
+    <style>
+        *{
+            box-sizing:border-box;
+        }
+
+        body{
+            font-family: Arial;
+            padding: 10px;
+            background: #f1f1f1;
+        }
+
+        .header{
+            padding: 30px;
+            text-align: center;
+            background: white;
+        }
+
+        .header a:link{
+            color: black;
+            text-decoration: none;
+        }
+
+        .header h1{
+            font-weight: bold;
+            font-size: 50px;
+        }
+        .topnav{
+            overflow: hidden;
+            background-color: #333;
+        }
+
+        .topnav a{
+            float: left;
+            display: block;
+            color: #f2f2f2;
+            text-align: center;
+            padding: 14px 16px;
+            text-decoration: none;
+        }
+
+        .topnav a:hover{
+            background-color: #ddd;
+            color:black;
+        }
+        ul{
+            list-style-type: none;
+        }
+        body{
+            font-family: "맑은 고딕","돋움";
+            font-size: 100%;
+        }
+        /* 너비가 768픽셀을 초과하는 데스크톱 컴퓨터 등 */
+        .c1{width: 8.33%; float: left; padding:15px;}
+        .c2{width: 16.66%; float: left; padding:15px;}
+        .c3{width: 25%; float: left; padding:15px;}
+        .c4{width: 33.33%; float: left; padding:15px;}
+        .c5{width: 41.66%; float: left; padding:15px;}
+        .c6{width: 50%; float: left; padding:15px;}
+        .c7{width: 58.33%; float: left; padding:15px;}
+        .c8{width: 66.66%;float: left; padding:15px;}
+        .c9{width: 75%; float: left; padding:15px;}
+        .c10{width: 83.33%; float: left; padding:15px;}
+        .c11{width: 91.66%; float: left; padding:15px;}
+        .c12{width: 100%;float: left; padding:15px;}
+        
+        
+        @media only screen and (max-width: 768px){
+            /*  <*=> c 에 해당하는 모든 것을 지정 */
+           [class*="c"]{
+            width: 100%;
+           }
+        }
+
+        aside{
+            color: #ffffff;
+        }
+        aside li{
+            padding: 10px;
+            margin:5px;
+            background-color: #333;
+        }
+        section#main{
+            padding:15px;
+            /* background-color: white; */
+            margin-top: 20px;
+        }
+        section#main p{
+            padding:10px;
+            font-size:0.95em;
+            line-height: 130%;
+        }
+        .item{
+            list-style-type: none;
+            /* float: left; */
+            text-align: center;
+            margin-bottom: 20px;
+        }
+        .card{
+            background-color: white;
+            padding:10px;
+            margin-top: 20px;
+        }
+        #bm{
+            overflow: hidden;
+            background-color: #333;
+        }
+        #bm a{
+            display: block;
+            color: #f2f2f2;
+            text-decoration: none;
+            text-align: center;
+            padding: 14px 16px;
+
+        }
+        #bm a:hover{
+            background-color: #ddd;
+            color:black;
+        }
+    </style>
+</head>
+<body>
+    <div class="header">
+        <a href="index.html"><h1>책과 음악</h1></a>
+        <p>Book and Music, for you</p>
+    </div>
+    <div class="topnav">
+        <a href="subpage1.html">이달의책</a>
+        <a href="subpage2.html">이달의음악</a>
+        <a href="subpage3.html">책추천</a>
+        <a href="subpage4.html">음악추천</a>
+        <a href="subpage5.html">게시판</a>
+        <a href="login.html" style="float:right">로그인</a>
+        <a href="join.html" style="float:right">회원가입</a>
+    </div>
+
+     <aside class="c3">
+        <div id="bm">
+        <a href="subpage3.html">추리 소설 추천</a>
+        <a href="subpage3_1.html">한국 소설 추천</a>
+        <a href="#">자기계발서 추천</a>
+        </div>
+     </aside>
+
+     <section id="main" class="c9">
+        <h1>깊이 빠져들게 하는 국내 소설 추천</h1>
+        <div class="card">
+            <ul class="item">
+                <li><img src="book5.jpg"></li>
+                <li><b>파과-구병모</b></li>
+                <li>매우 강한 킬러였던 '조각'은 어느새 시간이 흘러 60대가 되었고 그녀에게 힘에 부치는 일들이 많이 생겼다. 갑자기 나타난 지켜야할 존재와 그녀를 위협하는 존재. 조각이 어려운 일을 계속해서 버텨내는 모습을 보며 이야기에 빠져들게 되는 소설이다. </li>
+            </ul>
+        </div>
+        <div class="card">
+            <ul class="item">
+                <li><img src="book4.jpg"></li>
+                <li><b>나는 소망한다 내게 금지된 것을-양귀자</b></li>
+                <li>젊은 여자는 치밀한 계획을 통해 유명 남자 배우를 납치한다. 이 여자가 이런 일을 저지른 이유가 뭘까 계속해서 생각하게 한다. 성별과 관련된 사회적 문제를 생각해보도록 하려는 작가의 뜻이 담긴 것 같다. </li>
+            </ul>
+        </div>
+     </section>
+</body>
+</html>
